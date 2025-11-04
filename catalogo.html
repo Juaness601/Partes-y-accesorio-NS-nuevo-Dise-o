@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Partes y Accesorios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo de partes y accesorios .png" alt="Partes y Accesorios">
+                    <span>Partes<span>Accesorios</span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="metodos-pago.html">Métodos de Pago y envio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner de Página -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Nuestro Catálogo</h1>
+            <p>Descubre nuestra amplia gama de productos automotrices</p>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section class="catalog-section">
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category">Categoría:</label>
+                    <select id="category">
+                        <option value="all">Todos</option>
+                        <option value="arandelas">Arandelas</option>
+                        <option value="arandelas-tipo-cono">Arandelas Tipo Cono</option>
+                        <option value="arandela-inyector">Arandela Inyector</option>
+                        <option value="arandela-conica-punta-inyector">Arandela cónica de punta de inyector</option>
+                        <option value="arandela-doble-retorno">Arandela doble de retorno</option>
+                        <option value="arandela-aluminio">Arandela de aluminio</option>
+                        <option value="mini-kits">Mini kits</option>
+                        <option value="oring">O-ring</option>
+                        <option value="aditivos">Aditivos</option>
+                        <option value="bombas">Bombas de Inyección</option>
+                        <option value="turbos">Turbos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Precio:</label>
+                    <select id="price">
+                        <option value="all">Todos</option>
+                        <option value="0-50">$0 - $50</option>
+                        <option value="50-100">$50 - $100</option>
+                        <option value="100-500">$100 - $500</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Producto 1 - Arandela Cobre 6x10x1mm -->
+                <div class="product-card" data-category="arandelas" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela Cobre6x10jpeg.jpeg" alt="Arandela Cobre 6x10x1mm">
+                        <span class="product-badge">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela Cobre 6x10x1mm</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$14.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 - Arandela cobre de 8x12x1.mm -->
+                <div class="product-card" data-category="arandelas" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela cobre de 8x12x1.mm.jpeg" alt="Arandela cobre de 8x12x1.mm">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela cobre de 8x12x1.mm</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$18.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 - Arandela cobre de 10x15x1 -->
+                <div class="product-card" data-category="arandelas" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/10x15x1,5jpeg.jpeg" alt="Arandela cobre de 10x15x1">
+                        <span class="product-badge">Más vendido</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela cobre de 10x15x1</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$22.500</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 4 - Arandelas Base en Cobre 12x18x1,5 -->
+                <div class="product-card" data-category="arandelas" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/12x18x1,5mm.jpeg" alt="Arandelas Base en Cobre 12x18x1,5">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandelas Base en Cobre 12x18x1,5</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$27.500</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 5 - Arandelas De Base Cobre 14x20x1,5mm -->
+                <div class="product-card" data-category="arandelas" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/14x20x1,5.mmjpeg.jpeg" alt="Arandelas Base en Cobre 14x20x1,5mm">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandelas Base en Cobre 14x20x1,5mm</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$32.500</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 6 - Arandela De Base Cobre 16x22x1,5.mm -->
+                <div class="product-card" data-category="arandelas" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/12x22x1,5.jpeg" alt="Arandela De Base Cobre 16x22x1,5">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela De Base Cobre 16x22x1,5</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$37.500</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 7 - Arandela CR 7,5x15x1,5 -->
+                <div class="product-card" data-category="arandelas" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela Inyector Cummins 6BT. 7,5x15x1,5.jpeg" alt="Arandela Inyector Cummins 6BT. 7,5x15x1,5">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela Inyector Cummins 6BT. 7,5x15x1,5</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$15.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 8 - Arandela tuberia Diesel Tipo B -->
+                <div class="product-card" data-category="arandelas-tipo-cono" data-price="50-100">
+                    <div class="product-image">
+                        <img src="images/Cono Tipo B.jpeg" alt="Cono Tipo B">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela tuberia Diesel Tipo B</h3>
+                        <p>Cono tipo B</p>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$65.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 9 - Arandela tuberia Diesel Tipo A -->
+                <div class="product-card" data-category="arandelas-tipo-cono" data-price="50-100">
+                    <div class="product-image">
+                        <img src="images/Cono tipo A.jpeg" alt="Cono Tipo A">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela tuberia Diesel Tipo A</h3>
+                        <p>Cono tipo A</p>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$65.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 10 - Arandela Inyector Cummins 6BT -->
+                <div class="product-card" data-category="arandela-inyector" data-price="50-100">
+                    <div class="product-image">
+                        <img src="images/Arandela Inyector Cummins 6BT. 7,5x15x1,5.jpeg" alt="Arandela Inyector">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela Inyector Cummins 6BT</h3>
+                        <p>7,5x15x1,5</p>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$75.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 11 - Arandela Inyector Mack, Perkins -->
+                <div class="product-card" data-category="arandela-inyector" data-price="50-100">
+                    <div class="product-image">
+                        <img src="images/Arandela Inyector Mack, Perkins, 9,5x18x1,5..jpeg" alt="Arandela Inyector">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela Inyector Mack, Perkins</h3>
+                        <p>9,5x18x1,5</p>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$75.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 12 - Arandela base de Inyectores Electrónicos -->
+                <div class="product-card" data-category="arandela-inyector" data-price="50-100">
+                    <div class="product-image">
+                        <img src="images/Arandela base de Inyectores Electrónicos tipo Bosch, 7,5x15x1,5..jpeg"
+                            alt="Arandela Inyector">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela base de Inyectores Electrónicos</h3>
+                        <p>Arandela base de Inyectores Electrónicos tipo Bosch, 7,5x15x1,5.</p>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$75.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 13 - Arandela en bronce de punta de inyector NKR -->
+                <div class="product-card" data-category="arandela-conica-punta-inyector" data-price="50-100">
+                    <div class="product-image">
+                        <img src="images/Arandela en bronce de punta de inyector NKR.jpeg"
+                            alt="Arandela en bronce de punta de inyector NKR">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela en bronce de punta de inyector NKR</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$75.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 14 - Arandela bronce de punta de Inyector NPR -->
+                <div class="product-card" data-category="arandela-conica-punta-inyector" data-price="50-100">
+                    <div class="product-image">
+                        <img src="images/Arandela en bronce de punta de inyector NKR.jpeg"
+                            alt="Arandela bronce de punta de Inyector NPR.">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela bronce de punta de Inyector NPR.</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$75.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 15 - Arandela bronce punta de Inyector NQR REWARD -->
+                <div class="product-card" data-category="arandela-conica-punta-inyector" data-price="50-100">
+                    <div class="product-image">
+                        <img src="images/Arandela bronce punta de Inyector NQR REWARD..jpeg"
+                            alt="Arandela bronce punta de Inyector NQR REWARD.">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela bronce punta de Inyector NQR REWARD.</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$75.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 16 - Arandela doble de retorno en aluminio de 8mmL -->
+                <div class="product-card" data-category="arandela-doble-retorno" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/arandela doble a de reotorno aluminio 8m.jpeg" alt="Arandela de aluminio">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela doble de retorno en aluminio de 8mmL</h3>
+                        <p>Paquetes de 50 unidades</p>
+                        <div class="product-price">$30.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 17 - Arandela doble de retorno en aluminio de 10mm.L -->
+                <div class="product-card" data-category="arandela-doble-retorno" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela doble de retorno en aluminio de 10mm..jpeg"
+                            alt="Arandela de aluminio">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela doble de retorno en aluminio de 10mm.L</h3>
+                        <p>Paquetes de 50 unidades</p>
+                        <div class="product-price">$30.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 18 - Arandela de aluminio de retorno 12,5x22x1 -->
+                <div class="product-card" data-category="arandela-aluminio" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela de aluminio de retorno 12,5x22x1..jpeg" alt="Arandela de aluminio">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela de aluminio de retorno 12,5x22x1.</h3>
+                        <p>Paquetes de 50 unidades</p>
+                        <div class="product-price">$30.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 19 - Arandela de aluminio de retorno de Kia Pregio -->
+                <div class="product-card" data-category="arandela-aluminio" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela de aluminio de retorno de Kia Pregio de 12x19x1.jpeg"
+                            alt="Arandela de aluminio de retorno de Kia Pregio 12x19x1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela de aluminio de retorno de Kia Pregio 12x19x1</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$15.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 20 - Arandela de aluminio de 6x10x1 -->
+                <div class="product-card" data-category="arandela-aluminio" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela de aluminio de 6x10x1.jpeg" alt="Arandela de aluminio 6x10x1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela de aluminio 6x10x1</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$15.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 21 - Arandela de aluminio de 8x12x1 -->
+                <div class="product-card" data-category="arandela-aluminio" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela de aluminio de 8x12x1..jpeg" alt="Arandela de aluminio 8x12x1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela de aluminio 8x12x1</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$15.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 22 - Arandela de aluminio de 10x15x1 -->
+                <div class="product-card" data-category="arandela-aluminio" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela de aluminio de 10x15x1.jpeg" alt="Arandela de aluminio 10x15x1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela de aluminio 10x15x1</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$15.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 23 - Arandela de aluminio de 12x18x1 -->
+                <div class="product-card" data-category="arandela-aluminio" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela de aluminio de 12x18x1.jpeg" alt="Arandela de aluminio 12x18x1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela de aluminio 12x18x1</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$15.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 24 - Arandela de aluminio de 14x20x1 -->
+                <div class="product-card" data-category="arandela-aluminio" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela de aluminio de 14x20x1..jpeg" alt="Arandela de aluminio 14x20x1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela de aluminio 14x20x1</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$15.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 25 - Arandela de aluminio de 16x22x1,5 -->
+                <div class="product-card" data-category="arandela-aluminio" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Arandela de aluminio de 16x22x1,5..jpeg" alt="Arandela de aluminio 16x22x1,5">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela de aluminio 16x22x1,5</h3>
+                        <p>Paquete de 50 unidades</p>
+                        <div class="product-price">$15.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 26 - Mini kit surtido de arandelas en cobre -->
+                <div class="product-card" data-category="mini-kits" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Mini kit , surtido de arandelas en cobre..jpeg" alt="Mini kit surtido de arandelas en cobre">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mini kit surtido de arandelas en cobre</h3>
+                        <p>Paquete por unidad</p>
+                        <div class="product-price">$15.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 27 - Mini estuche surtido -->
+                <div class="product-card" data-category="mini-kits" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/minikit.jpeg" alt="Mini estuche surtido de arandela de cobre y O-ring">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mini estuche surtido de arandela de cobre y O-ring</h3>
+                        <p>Paquete por unidad</p>
+                        <div class="product-price">$15.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 28 - Caja oring Tipo B -->
+                <div class="product-card" data-category="oring" data-price="0-50">
+                    <div class="product-image">
+                        <img src="images/Caja Oring tipoB .jpeg" alt="Caja oring Tipo B">
+                    </div>
+                    <div class="product-info">
+                        <h3>Caja oring Tipo B</h3>
+                        <p>Paquete por unidad</p>
+                        <div class="product-price">$15.000</div>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+            </div> <!-- Cierre de products-grid -->
+        </div> <!-- Cierre de container -->
+    </section>
+
+    <footer>
+        <!-- Aquí iría el mismo footer de tu index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partes y Accesorios Diesel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+     
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo de partes y accesorios .png" alt="Partes y Accesorios">
+                    <span>Partes<span>Accesorios</span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="metodos-pago.html">Métodos de Pago y envio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section con imagen integrada -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Partes y Accesorios para Diesel</h1>
+            <p>Tu aliado en la venta de partes y accesorios</p>
+            <div class="hero-image-container">
+                <img src="images/contactoNS.JPG" alt="Ficha de contacto" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+   <!-- Sección Destacados -->
+<section class="featured">
+    <div class="container">
+        <div class="featured-content">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="Mini kit" data-category="Mini kit" data-price="20-50">
+                    <div class="product-image">
+                        <img src="images/minikit.jpeg" alt="">
+                        <span class="product-badge">Más vendido</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mini estuche surtido.</h3>
+                        <p>Mini estuche surtido de arandela de cobre y O-ring pequeño y mediano.</p>
+                        <div class="product-price">$00000</div>
+                        <a href="detalle-producto.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card" data-category="arandelas" data-price="10-20">
+                    <div class="product-image">
+                        <img src="images/Arandelas cobre.png" alt="Arandelas cobre">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandelas cobre</h3>
+                        <p>Arandelas cobre 6,8,18,11,12,14,16mm.</p>
+                        <div class="product-price">$0000</div>
+                        <a href="detalle-producto.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card" data-category="arandelas aluminio" data-price="15-30">
+                    <div class="product-image">
+                        <img src="images/Arandela aluminio .png" alt="arandelas de aluminio">
+                        <span class="product-badge">Oferta</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Arandela aluminio 6,8,10,12,14,16.</h3>
+                        <p>Arandela aluminio 6,8,10,12,14,16. De retorno grande y pequeña,Encauchetada de 12 y 14mm.</p>
+                        <div class="product-price">$</div>
+                        <a href="detalle-producto.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="position: relative;">
+                <a href="catalogo.html" class="btn">Ver Todos los Productos</a>
+                <a href="https://wa.me/c/573232264555" target="_blank" class="whatsapp-section-btn" aria-label="Consultar por WhatsApp">
+                    <i class="fab fa-whatsapp"></i> Consultar catalogo por WhatsApp
+                </a>   
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Dirección:Bogota Tienda Virtual</p>
+                    <p><i class="fas fa-phone"></i> Teléfono: +57 323 2264555 </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                        <li><a href="metodos-pago.html">Métodos de Pago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociales</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/573232264555" target="_blank" aria-label="Chat de WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Partes y Accesorios. Todos los derechos reservados.</p>
+            </div>
+        </div> 
+        
+
+    </footer>
+        <!-- Todo tu contenido actual... -->
+
+  <!-- Modal (pegar esto JUSTO antes de </body>) -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+
+  <!-- JavaScript (opción 1: archivo externo) -->
+  <script src="js/modal.js"></script>
+
+  <!-- O JavaScript (opción 2: directo en HTML) -->
+  <script>
+    // Código JavaScript que te proporcioné anteriormente
+  </script>
+
+</body> <!-- Cierre del body -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>
