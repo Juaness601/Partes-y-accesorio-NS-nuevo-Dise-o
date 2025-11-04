@@ -1,5 +1,22 @@
-// Menú móvil
+// Menú móvil y Carrusel de imágenes
 document.addEventListener('DOMContentLoaded', function() {
+    // Código para el carrusel
+    const images = document.querySelectorAll('.hero-image.centered');
+    let currentImage = 0;
+
+    function changeImage() {
+        // Quitar la clase active de todas las imágenes
+        images.forEach(img => img.classList.remove('active'));
+        
+        // Avanzar al siguiente índice
+        currentImage = (currentImage + 1) % images.length;
+        
+        // Activar la siguiente imagen
+        images[currentImage].classList.add('active');
+    }
+
+    // Cambiar la imagen cada 5 segundos
+    setInterval(changeImage, 5000);
     const mobileMenuBtn = document.querySelector('.mobile-menu');
     const navLinks = document.querySelector('.nav-links');
     
