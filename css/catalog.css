@@ -1,7 +1,7 @@
 /* Catálogo */
 .page-banner {
-    background: linear-gradient(135deg, var(--primary), #34495e);
-    color: white;
+    background: white;
+    color: #000;
     padding: 80px 0;
     text-align: center;
 }
@@ -9,7 +9,11 @@
 .page-banner h1 {
     font-size: 42px;
     margin-bottom: 15px;
-    color: white;
+    color: #000;
+}
+
+.page-banner p {
+    color: #000;
 }
 
 .catalog-section {

@@ -14,14 +14,14 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="images/logo de partes y accesorios .png" alt="Partes y Accesorios">
+                    <img src="images/logoo.png" alt="Partes y Accesorios">
                     <span>Partes<span>Accesorios</span></span>
                 </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                    <li><a href="metodos-pago.html">Métodos de Pago y envio</a></li>
+                    <li><a href="quienes-somos.html">QuiéneS Somos</a></li>
+                    <li><a href="metodos-pago.html">Métodos de pago y envío</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
                 <div class="mobile-menu">
@@ -31,25 +31,19 @@
         </div>
     </header>
 
-    <!-- Hero Section con imagen integrada -->
+    <!-- Hero a pantalla completa (solo imagen de fondo) -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Partes y Accesorios para Diesel</h1>
-            <p>Tu aliado en la venta de partes y accesorios</p>
-            <div class="hero-image-container">
-                <img src="images/contactoNS.JPG" alt="Ficha de contacto" loading="lazy">
-            </div>
-        </div>
+        <div class="hero-content"></div>
     </section>
 
    <!-- Sección Destacados -->
 <section class="featured">
     <div class="container">
         <div class="featured-content">
-            <h2 class="section-title">Productos Destacados</h2>
+            <h2 class="section-title">Productos destacados</h2>
             <div class="products-grid">
                 <!-- Producto 1 -->
-                <div class="Mini kit" data-category="Mini kit" data-price="20-50">
+                <div class="product-card" data-category="mini-kits" data-price="20-50">
                     <div class="product-image">
                         <img src="images/minikit.jpeg" alt="">
                         <span class="product-badge">Más vendido</span>
@@ -57,7 +51,7 @@
                     <div class="product-info">
                         <h3>Mini estuche surtido.</h3>
                         <p>Mini estuche surtido de arandela de cobre y O-ring pequeño y mediano.</p>
-                        <div class="product-price">$00000</div>
+                        <div class="product-price">$</div>
                         <a href="detalle-producto.html" class="btn">Ver Detalles</a>
                     </div>
                 </div>
@@ -89,47 +83,40 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center" style="position: relative;">
-                <a href="catalogo.html" class="btn">Ver Todos los Productos</a>
+            <div class="text-center">
+                <a href="catalogo.html" class="btn">Ver todos los productos</a>
                 <a href="https://wa.me/c/573232264555" target="_blank" class="whatsapp-section-btn" aria-label="Consultar por WhatsApp">
-                    <i class="fab fa-whatsapp"></i> Consultar catalogo por WhatsApp
+                    <i class="fab fa-whatsapp"></i> Consultar catálogo por Whatsapp
                 </a>   
             </div>
         </div>
     </div>
 </section>
+    
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/573232264555" class="floating-whatsapp" target="_blank" aria-label="Abrir chat de WhatsApp">
+        <img src="images/ChatBot.png" alt="Chat WhatsApp">
+    </a>
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contacto</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Dirección:Bogota Tienda Virtual</p>
-                    <p><i class="fas fa-phone"></i> Teléfono: +57 323 2264555 </p>
-                </div>
-                <div class="footer-section">
-                    <h3>Enlaces Rápidos</h3>
-                    <ul>
-                        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                        <li><a href="metodos-pago.html">Métodos de Pago</a></li>
-                    </ul>
+                    <p><i class="fas fa-map-marker-alt"></i> Dirección: Bogota Tienda Virtual</p>
+                    <p><i class="fas fa-phone"></i> Teléfono: +57 323 2264555</p>
                 </div>
                 <div class="footer-section">
                     <h3>Redes Sociales</h3>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/573232264555" target="_blank" aria-label="Chat de WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
             </div>
             <div class="copyright">
                 <p>&copy; Partes y Accesorios. Todos los derechos reservados.</p>
             </div>
-        </div> 
-        
-
+        </div>
     </footer>
         <!-- Todo tu contenido actual... -->
 
@@ -148,8 +135,6 @@
     // Código JavaScript que te proporcioné anteriormente
   </script>
 
-</body> <!-- Cierre del body -->
-
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

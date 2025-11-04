@@ -1,4 +1,5 @@
 /* Estilos Generales */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&display=swap');
 :root {
     --primary: #2c3e50;
     --secondary: #e74c3c;
@@ -12,13 +13,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Frank Ruhl Libre', serif;
 }
 
 body {
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
+    font-family: 'Frank Ruhl Libre', serif;
 }
 
 .container {
@@ -31,9 +33,16 @@ section {
     padding: 60px 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
     color: var(--dark);
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700; /* Frank Ruhl Libre Bold */
+}
+
+strong, b {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700; /* Frank Ruhl Libre Bold */
 }
 
 .btn {
@@ -53,7 +62,7 @@ h1, h2, h3 {
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, var(--primary), #34495e);
+    background: #363636; /* fondo gris oscuro */
     color: white;
     padding: 15px 0;
     position: sticky;
@@ -71,7 +80,8 @@ nav {
     display: flex;
     align-items: center;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700; /* Frank Ruhl Libre Bold */
+    font-family: 'Frank Ruhl Libre', serif; /* tipografía del menú */
 }
 
 .logo img {
@@ -80,7 +90,7 @@ nav {
 }
 
 .logo span {
-    color: var(--accent);
+    display: none; /* ocultar texto, dejar solo el logo en el menú */
 }
 
 .nav-links {
@@ -99,6 +109,7 @@ nav {
     transition: all 0.3s ease;
     padding: 5px 0;
     border-bottom: 2px solid transparent;
+    font-family: 'Frank Ruhl Libre', serif; /* tipografía del menú */
 }
 
 .nav-links a:hover {
@@ -114,7 +125,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    min-height: 500px; /* Usamos min-height para flexibilidad */
+    min-height: 520px; /* Altura similar al mockup */
     background: url('../images/hero-bg.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -137,8 +148,8 @@ nav {
 
 .hero-content {
     position: relative;
-    z-index: 2; /* Asegura que el contenido esté sobre el overlay */
-    max-width: 1200px; /* Limita el ancho para pantallas grandes */
+    z-index: 2;
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -156,25 +167,7 @@ nav {
     line-height: 1.5;
 }
 
-.hero-image-container {
-    margin: 20px auto 0; /* Espaciado superior y centrado */
-    max-width: 500px; /* Controla el ancho máximo */
-    width: 80%; /* Flexible en móviles */
-}
-
-.hero-image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza el efecto */
-
-} 
-.hero-image-container img:hover {
-    transform: scale(1.05); /* Aumenta un 5% (ajusta según necesidad) */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Sombra más pronunciada al hacer hover */
-    cursor: pointer; /* Cambia el cursor a "mano" para indicar interactividad */
-}
+/* Eliminada imagen interna del hero para usar solo fondo */
 
 
 /* Sección Productos Destacados */
@@ -190,7 +183,7 @@ nav {
 }
 
 .section-title {
-    color: var(--dark);
+    color: #FF894C; /* color naranja */
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
@@ -211,6 +204,8 @@ nav {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card:hover {
@@ -244,12 +239,16 @@ nav {
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 700; /* Frank Ruhl Libre Bold */
+    font-family: 'Frank Ruhl Libre', serif;
     z-index: 1;
 }
 
 .product-info {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .product-info h3 {
@@ -262,11 +261,13 @@ nav {
     color: var(--gray);
     font-size: 0.9rem;
     margin-bottom: 15px;
+    flex-grow: 1;
 }
 
 .product-price {
     color: var(--secondary);
-    font-weight: bold;
+    font-weight: 700; /* Frank Ruhl Libre Bold */
+    font-family: 'Frank Ruhl Libre', serif;
     font-size: 1.2rem;
     margin: 15px 0;
 }
@@ -276,15 +277,25 @@ nav {
     width: 100%;
     padding: 10px;
     text-align: center;
-    background: var(--primary);
+    background: #FF894C;
+    color: white;
     transition: all 0.3s;
 }
 
 .product-card .btn:hover {
-    background: var(--accent);
+    background: #e67e3d;
     transform: none;
 }
- /* Estilo para el botón de WhatsApp en sección destacados */
+/* Contenedor de botones centrados */
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Estilo para el botón de WhatsApp en sección destacados */
 .whatsapp-section-btn {
     display: inline-flex;
     align-items: center;
@@ -293,7 +304,6 @@ nav {
     padding: 8px 15px;
     border-radius: 5px;
     text-decoration: none;
-    margin-left: 15px;
     transition: all 0.3s ease;
     font-size: 14px;
 }
@@ -312,13 +322,11 @@ nav {
 /* Estilo responsivo para botones en sección destacados */
 @media (max-width: 768px) {
     .text-center {
-        display: flex;
         flex-direction: column;
         gap: 15px;
     }
     
     .whatsapp-section-btn {
-        margin-left: 0;
         justify-content: center;
     }
 }
@@ -331,6 +339,35 @@ nav {
 
 .social-icons a[href*="whatsapp"]:hover {
     background: #128C7E;
+}
+
+/* Botón flotante de WhatsApp */
+.floating-whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    z-index: 1001;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.floating-whatsapp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 /* Responsive */
 @media (max-width: 768px) {
@@ -356,7 +393,7 @@ nav {
 }
 /* Footer */
 footer {
-    background: var(--primary);
+    background: #363636; /* fondo gris oscuro */
     color: white;
     padding: 40px 0 20px;
 }
@@ -375,12 +412,13 @@ footer {
 }
 
 .footer-section h3 {
-    color: var(--accent);
+    color: #FF894C; /* color para títulos Contacto y Redes Sociales */
     margin-bottom: 20px;
 }
 
-.footer-section p, .footer-section li {
+.footer-section p {
     margin-bottom: 10px;
+    color: white; /* color blanco para dirección y teléfono */
 }
 
 .footer-section a {
@@ -389,19 +427,25 @@ footer {
 }
 
 .footer-section a:hover {
-    color: var(--accent);
+    color: #FF894C;
 }
 
 .social-icons a {
     display: inline-block;
     margin-right: 15px;
     font-size: 20px;
+    color: white;
+}
+
+.social-icons a:hover {
+    color: #FF894C;
 }
 
 .copyright {
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
 }
    
  /* Estilos del Modal */
