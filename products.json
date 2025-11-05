@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "slug": "camiseta-azul",
+    "nombre": "Camiseta Azul",
+    "precio": 19.99,
+    "descripcion": "Camiseta 100% algodón. Disponible S/M/L.",
+    "imagen": "images/camiseta-azul.jpg",
+    "categoria": "ropa",
+    "stock": 12
+  },
+  {
+    "id": "2",
+    "slug": "taza-minimal",
+    "nombre": "Taza Minimal",
+    "precio": 9.50,
+    "descripcion": "Taza de cerámica, apta para microondas.",
+    "imagen": "images/taza.jpg",
+    "categoria": "hogar",
+    "stock": 30
+  }
+]

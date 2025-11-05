@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Producto | Partes y Accesorios Diesel</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<div class="container">
+			<nav>
+				<div class="logo">
+					<img src="images/logoo.png" alt="Partes y Accesorios">
+					<span>Partes<span>Accesorios</span></span>
+				</div>
+				<ul class="nav-links">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="catalogo.html">Catálogo</a></li>
+					<li><a href="quienes-somos.html">QuiéneS Somos</a></li>
+					<li><a href="metodos-pago.html">Métodos de pago y envío</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+				<div class="mobile-menu">
+					<i class="fas fa-bars"></i>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="producto-detalle">
+			<div class="container">
+				<div class="producto-grid">
+					<!-- Columna Izquierda: imagen y miniaturas -->
+					<aside class="producto-imagenes" aria-label="Galería de imágenes del producto">
+						<div class="producto-tarjeta">
+							<img src="images/Producto1.png" alt="Producto principal" class="producto-img-principal">
+							<div class="producto-miniaturas" role="list">
+								<img src="images/minikit.jpeg" alt="Miniatura 1" class="miniatura active" role="listitem">
+								<img src="images/Arandela bronce de punta de  Inyector NPR..jpeg" alt="Miniatura 2" class="miniatura" role="listitem">
+								<img src="images/Producto1.png" alt="Miniatura 3" class="miniatura" role="listitem">
+							</div>
+						</div>
+					</aside>
+
+					<!-- Columna Derecha: información del producto -->
+					<article class="producto-info">
+						<div class="producto-info-header">
+							<h1 class="producto-titulo">Arandela Premium</h1>
+							<button class="btn-favorito" aria-label="Agregar a favoritos"><i class="fas fa-heart"></i></button>
+						</div>
+
+						<div class="producto-precio">$12.000</div>
+
+						<p class="producto-descripcion">Arandela de alta resistencia para sistemas diesel. Material de calidad,
+                            
+                            buena conductividad y ajuste perfecto. Ideal para repuestos y mantenimiento profesional.</p>
+
+						<button class="btn-cta">Comprar</button>
+
+						<div class="producto-bloques">
+							<div class="bloque-info">
+								<i class="fas fa-truck" aria-hidden="true"></i>
+								<span>Envíos a toda Colombia</span>
+							</div>
+							<div class="bloque-info">
+								<i class="fab fa-whatsapp" aria-hidden="true"></i>
+								<span>Contáctanos por WhatsApp / Para más información</span>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h3>Contacto</h3>
+					<p><i class="fas fa-map-marker-alt"></i> Dirección: Bogota Tienda Virtual</p>
+					<p><i class="fas fa-phone"></i> Teléfono: +57 323 2264555</p>
+				</div>
+				<div class="footer-section">
+					<h3>Redes Sociales</h3>
+					<div class="social-icons">
+						<a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>&copy; Partes y Accesorios. Todos los derechos reservados.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- Modal (pegar esto JUSTO antes de </body>) -->
+	<div id="imageModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="modalImage">
+		<div id="caption"></div>
+	</div>
+	<!-- JavaScript -->
+	<script src="js/modal.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

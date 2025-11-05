@@ -17,6 +17,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cambiar la imagen cada 5 segundos
     setInterval(changeImage, 5000);
+
+    // --- Comportamiento para miniaturas en la página de producto ---
+    const mainProductImg = document.querySelector('.producto-img-principal');
+    const thumbs = document.querySelectorAll('.producto-miniaturas .miniatura');
+    if (mainProductImg && thumbs.length) {
+        thumbs.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                // Cambiar imagen principal
+                mainProductImg.src = thumb.src;
+                mainProductImg.alt = thumb.alt || mainProductImg.alt;
+                // estado activo
+                thumbs.forEach(t => t.classList.remove('active'));
+                thumb.classList.add('active');
+            });
+        });
+    }
     const mobileMenuBtn = document.querySelector('.mobile-menu');
     const navLinks = document.querySelector('.nav-links');
     
